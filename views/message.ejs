@@ -1,9 +1,10 @@
 <li class="list-group-item"> 
     <p>
-        <%= message.user %>
+        <%= message.username %>
     </p> 
     <p>
         <%= message.text %>
     </p>
-    <a href="/<%= message.user %>" class="btn btn-primary btn-sm">Details</a>
+    <a href="/<%= message.username %>" class="btn btn-primary btn-sm">Details</a>
+    <a href="/<%= message.id %>/delete" class="btn btn-danager btn-sm">delete</a>
 </li>

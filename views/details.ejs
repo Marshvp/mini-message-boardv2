@@ -12,7 +12,7 @@
             <ul class="list-group mx-auto">
                 <% messages.slice().reverse().forEach((message) => { %>
                     <%- include('message', {message: message}); %>
-                    <p><%= message.added %></p>
+                    <p><%= message.formattedDate %></p>
                 <% }) %>
             </ul>
         </div>
